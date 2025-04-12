@@ -1,62 +1,70 @@
-# Cut List Tool
+# Getting Started with Create React App
 
-My web-based tool to optimise cutting plans for linear materials like wood, metal bars, or any other material that needs to be cut from stock lengths. Created to replace the late, great '[filltools](http://www.filtools.com/cutlist)' - you'll never know how many projects you helped me with. Initial version one-shotted with Claude Sonnet 3.7. Which is ridiculous.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-- **Visual Cutting Plans**: See exactly how each piece will be cut from your stock
-- **Auto-Named Parts**: Parts are automatically assigned names (A, B, C, etc.) for easy reference
-- **Waste Optimisation**: Algorithm minimises waste by efficiently arranging cuts
-- **Kerf Compensation**: Accounts for material lost in each cut
-- **Batch Entry**: Add multiple parts or stock lengths via comma-separated values
-- **Real-time Calculations**: Cutting plan updates automatically as you add/remove parts
-- **Customisable Part Names**: Rename parts for better organisation
-- **Stock Management**: Add both standard stock lengths and custom lengths
+In the project directory, you can run:
 
-## How to Use
+### `npm start`
 
-### Adding Parts
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-1. Enter the length of the part you need in millimeters (or any unit as long as you're consistant across measurements)
-2. Set the quantity if you need multiple pieces of the same length
-3. Click "Add" or press Enter
-4. To add multiple lengths at once, enter comma-separated values (e.g., "100, 200, 300")
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Managing Parts
+### `npm test`
 
-- **Adjust Quantity**: Use the + and - buttons to add or remove pieces of a particular length
-- **Edit Names**: Click on any part name to edit it
-- **Remove Parts**: Click "Delete All" to remove all parts of a specific length
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Setting Up Stock
+### `npm run build`
 
-1. Enter your default stock length (common size you typically use)
-2. Click "Add Default" to add this to your available stock
-3. For custom stock lengths, enter them in the "Custom Length" field
-4. Add multiple stock lengths at once with comma-separated values
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Kerf Width
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Set the width of your saw blade or cutting tool to account for material lost in each cut.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Reading the Cutting Plan
+### `npm run eject`
 
-The optimiser automatically calculates the most efficient way to cut your parts from the available stock:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- Each stock piece shows a visual representation of cuts
-- Colours indicate parts and waste areas
-- Detailed cutting list shows the exact position to make each cut
-- The system displays total waste and percentage efficiency
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Tips for Best Results
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-- Add your most common stock length as the default
-- Enter all parts before generating a cutting plan
-- For closely sized parts, consider making them identical when possible to improve efficiency
-- Review the visual cutting plan carefully before making physical cuts
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Technical Details
+## Learn More
 
-- Built with React
-- Uses a modified First-Fit Decreasing algorithm with waste optimisation
-- All calculations happen in the browser - no data is sent to any server
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
