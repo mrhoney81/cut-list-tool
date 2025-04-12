@@ -1,4 +1,4 @@
-# Cut List Optimiser
+# Cut List Tool
 
 My web-based tool to optimise cutting plans for linear materials like wood, metal bars, or any other material that needs to be cut from stock lengths. Created to replace the late, great '[filltools](http://www.filtools.com/cutlist)' - you'll never know how many projects you helped me with. Initial version one-shotted with Claude Sonnet 3.7. Which is ridiculous.
 
